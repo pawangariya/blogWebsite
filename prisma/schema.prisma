@@ -1,8 +1,7 @@
 // prisma/schema.prisma
-generator client {
-  provider = "prisma-client-js"
-}
+import { PrismaClient } from "@prisma/client";
 
+export const prisma = new PrismaClient();
 
 datasource db {
   provider = "postgresql"
