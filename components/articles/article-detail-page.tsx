@@ -1,4 +1,4 @@
-import  { Prisma } from '@/app/generated/prisma'
+
 import React from 'react'
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import LikeButton from './like-button';
@@ -6,6 +6,7 @@ import CommentList from '../comments/comment-list';
 import CommentInput from '../comments/comment-input';
 import { prisma } from '@/lib/prisma';
 import { auth } from '@clerk/nextjs/server';
+import { Prisma } from '@prisma/client';
 
 type ArticleDetailPageProps = {
     article: Prisma.ArticlesGetPayload<{
