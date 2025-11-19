@@ -12,7 +12,7 @@ import {
 } from "../ui/table";
 import { Badge } from "../ui/badge";
 import Link from "next/link";
-import { Prisma } from "@/app/generated/prisma/browser";
+import { Prisma } from "@prisma/client";
 import { useFormStatus } from "react-dom";
 import { deleteArticle } from "@/actions/delete-articles";
 
